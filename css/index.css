@@ -1,0 +1,708 @@
+.wrap .toolBar {
+  width: 300px;
+  height: 100%;
+  background: #7a6e6e;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+}
+.wrap .toolBar.toolWrap {
+  right: 0;
+}
+.wrap .toolBar.toolOut {
+  right: -294px;
+}
+.wrap .toolBar .content {
+  width: 294px;
+  height: 100%;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  background: bisque;
+  z-index: 4;
+}
+.wrap .toolBar .toolBtn {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e;
+  left: -29px;
+  cursor: pointer;
+}
+.wrap .toolBar .toolBtn.list {
+  background: #7a6e6e url("../images/list.png") no-repeat;
+  background-size: cover;
+}
+.wrap .toolBar .toolBtn.cross {
+  background: #7a6e6e url("../images/cross.png") no-repeat;
+  background-size: cover;
+}
+.wrap .toolBar .toolList {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -29px;
+}
+.wrap .toolBar .toolList li {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+.wrap .toolBar .toolList li i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #7a6e6e url("../images/toolbars.png") -87px -174px no-repeat;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+.wrap .toolBar .toolList li em {
+  position: absolute;
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  top: 0;
+  background: pink;
+  color: #fff;
+  left: 35px;
+  transition: 0.5s;
+}
+.wrap .toolBar .toolList li:hover i {
+  background: #ffc0cb url("../images/toolbars.png") -87px -174px no-repeat;
+}
+.wrap .toolBar .toolList li:hover em {
+  left: -62px;
+}
+.wrap .header .top {
+  width: 100%;
+  height: 30px;
+  background: #eaeaea;
+}
+.wrap .header .top .topMain {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.wrap .header .top .topMain .login {
+  height: 100%;
+  float: left;
+  line-height: 30px;
+}
+.wrap .header .top .topMain .login h5 {
+  float: left;
+  font-weight: 400;
+}
+.wrap .header .top .topMain .login p {
+  float: left;
+  margin-left: 4px;
+  line-height: 32px;
+}
+.wrap .header .top .topMain .login p a:nth-child(1) {
+  border-right: 1px solid #b3aeae ;
+  padding-right: 4px;
+}
+.wrap .header .top .topMain .topNav {
+  height: 100%;
+  float: right;
+  line-height: 30px;
+  font-size: 0;
+}
+.wrap .header .top .topMain .topNav a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.wrap .header .top .topMain .topNav a + a {
+  border-left: 1px solid #b3aeae;
+}
+.wrap .header .bottom .bottomMain {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.wrap .header .bottom .bottomMain::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .bottom .bottomMain h1 {
+  margin: 25px 45px;
+  float: left;
+}
+.wrap .header .bottom .bottomMain h1 img {
+  width: 175px;
+  height: 56px;
+}
+.wrap .header .bottom .bottomMain .search {
+  margin-top: 35px;
+  float: right;
+  *zoom: 1;
+}
+.wrap .header .bottom .bottomMain .search::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .header .bottom .bottomMain .search input {
+  width: 490px;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 0 4px;
+  border: 3px solid #ea4a36;
+  float: left;
+}
+.wrap .header .bottom .bottomMain .search button {
+  width: 68px;
+  height: 32px;
+  background: #ea4a36;
+  color: #fff;
+  border: none;
+  float: left;
+}
+.wrap .typeNav {
+  border-bottom: 2px solid #e1251b;
+}
+.wrap .typeNav .typeNavMain {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.wrap .typeNav .typeNavMain::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .typeNav .typeNavMain h3 {
+  float: left;
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #e1251b;
+  color: #fff;
+}
+.wrap .typeNav .typeNavMain div {
+  float: left;
+}
+.wrap .typeNav .typeNavMain div a {
+  margin: 0 22px;
+  font-size: 16px;
+  color: #333;
+  line-height: 50px;
+}
+.wrap .main .mainCon {
+  width: 1200px;
+  margin: 15px auto 0;
+}
+.wrap .main .mainCon .conPoin {
+  padding: 9px 15px 9px 0;
+}
+.wrap .main .mainCon .conPoin i {
+  margin: 0 5px;
+}
+.wrap .main .mainCon .infoWrap {
+  margin: 5px 0 15px;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .previwWrap {
+  width: 400px;
+  float: left;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #DFDFDF;
+  position: relative;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw .zoomImg {
+  width: 100%;
+  height: 100%;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw .zoomImg img {
+  width: 100%;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw .mask {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw .bigBox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 420px;
+  top: 0;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .previw .bigBox img {
+  width: 800px;
+  height: 800px;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail {
+  width: 100%;
+  margin-top: 5px;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail > a {
+  width: 10px;
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  border: 1px solid #CCC;
+  background: #EBEBEB;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .prev {
+  float: left;
+  margin-right: 4px;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .next {
+  float: right;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .itemWrap {
+  width: 372px;
+  height: 56px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .itemWrap .list {
+  width: 9999px;
+  position: absolute;
+  left: 0;
+  transition: 1s;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .itemWrap .list li {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  padding: 2px;
+}
+.wrap .main .mainCon .infoWrap .previwWrap .thumbnail .itemWrap .list li img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .main .mainCon .infoWrap .info {
+  width: 700px;
+  float: right;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop h3 {
+  font-size: 14px;
+  margin-top: 15px;
+  line-height: 21px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .news {
+  color: #e12228;
+  margin-top: 15px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea {
+  padding: 7px;
+  margin-top: 10px;
+  background: #fee9ec;
+  line-height: 28px;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea > div .title {
+  margin-right: 15px;
+  float: left;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop {
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop .price {
+  float: left;
+  color: #cc1122;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop .price i {
+  font-size: 16px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop .price span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop .price em {
+  font-size: 12px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceTop .remark {
+  float: right;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceBottom {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceBottom::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceBottom > div {
+  width: 520px;
+  float: left;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceBottom > div i {
+  padding: 3px;
+  background: #c81623;
+  color: #fff;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .priceArea .priceBottom > div span {
+  color: #999;
+  margin-left: 4px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support > div {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support > div::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support > div p {
+  float: left;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support > div .title {
+  margin-right: 15px;
+}
+.wrap .main .mainCon .infoWrap .info .infoTop .support > div .text {
+  color: #999;
+}
+.wrap .main .mainCon .infoWrap .info .choose {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.wrap .main .mainCon .infoWrap .info .choose .choosed mark {
+  background: snow;
+  border: 1px solid #ddd;
+  padding: 9px 20px;
+  margin-right: 20px;
+}
+.wrap .main .mainCon .infoWrap .info .choose .choosed mark a {
+  margin-left: 20px;
+  color: red;
+}
+.wrap .main .mainCon .infoWrap .info .choose .chooseArea dl {
+  margin: 13px 0;
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .choose .chooseArea dl::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .choose .chooseArea dl dt {
+  float: left;
+  margin-right: 15px;
+}
+.wrap .main .mainCon .infoWrap .info .choose .chooseArea dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  padding: 2px 14px;
+  border-left: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbb;
+  cursor: pointer;
+}
+.wrap .main .mainCon .infoWrap .info .choose .chooseArea dl dd:nth-of-type(1) {
+  color: red;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap {
+  *zoom: 1;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .control {
+  width: 55px;
+  position: relative;
+  float: left;
+  margin-right: 15px;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .control input {
+  width: 38px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+  color: #555;
+  border: 1px solid #ddd;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .control a {
+  position: absolute;
+  width: 15px;
+  height: 18px;
+  background: #f1f1f1;
+  color: #666;
+  text-align: center;
+  line-height: 18px;
+  border: 1px solid #ddd;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .control .plus {
+  right: 0;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .control .minus {
+  right: 0;
+  top: 20px;
+  border-top: none;
+}
+.wrap .main .mainCon .infoWrap .info .choose .carWrap .addCar {
+  float: left;
+  padding: 0 25px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  background: #e1251b;
+  color: #fff;
+  border: none;
+}
+.wrap .detailWrap {
+  width: 1200px;
+  margin: 30px auto 0;
+  *zoom: 1;
+}
+.wrap .detailWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .detailWrap aside {
+  width: 210px;
+  border: 1px solid #ccc;
+  float: left;
+}
+.wrap .detailWrap aside .tabWrap {
+  *zoom: 1;
+}
+.wrap .detailWrap aside .tabWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .detailWrap aside .tabWrap > h4 {
+  width: 105px;
+  height: 40px;
+  line-height: 37px;
+  float: left;
+  text-align: center;
+  border-top: 3px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+.wrap .detailWrap aside .tabWrap > h4.active {
+  border-top: 3px solid #e1251b;
+  border-bottom: 1px solid #fff;
+}
+.wrap .detailWrap aside .tabContent {
+  padding: 10px;
+}
+.wrap .detailWrap aside .tabContent > div {
+  display: none;
+}
+.wrap .detailWrap aside .tabContent > div.active {
+  display: block;
+}
+.wrap .detailWrap aside .tabContent > div .partList {
+  *zoom: 1;
+}
+.wrap .detailWrap aside .tabContent > div .partList::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .detailWrap aside .tabContent > div .partList li {
+  float: left;
+  width: 50%;
+  border-bottom: 1px dashed #ededed;
+  line-height: 28px;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li {
+  margin: 5px 0 15px;
+  border-bottom: 1px solid #ededed;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li .gImg {
+  text-align: center;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li .gImg img {
+  width: 152px;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li .price {
+  font-size: 16px;
+  color: #c81623;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li .carBox {
+  text-align: center;
+  margin: 5px 0;
+}
+.wrap .detailWrap aside .tabContent > div .goodsList li .carBox a {
+  padding: 2px 14px;
+  line-height: 18px;
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+}
+.wrap .detailWrap .detail {
+  width: 980px;
+  float: right;
+}
+.wrap .detailWrap .detail .fitting {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.wrap .detailWrap .detail .fitting h4 {
+  background: #f1f1f1;
+  padding: 5px 0 5px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.wrap .detailWrap .detail .fitting .goodSuits {
+  height: 170px;
+  padding-top: 10px;
+  *zoom: 1;
+}
+.wrap .detailWrap .detail .fitting .goodSuits::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .master {
+  width: 127px;
+  height: 165px;
+  text-align: center;
+  position: relative;
+  float: left;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .master img {
+  width: 87px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .master p {
+  font-size: 16px;
+  color: #c81623;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .master i {
+  position: absolute;
+  top: 48px;
+  right: -25px;
+  font-size: 16px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .suits {
+  float: left;
+  width: 668px;
+  height: 165px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .suits li {
+  width: 127px;
+  float: left;
+  margin: 0 20px;
+  text-align: center;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .suits li img {
+  width: 120px;
+  height: 130px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .result {
+  float: left;
+  border-left: 1px solid #ddd;
+  width: 153px;
+  height: 165px;
+  padding-left: 10px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .result > div {
+  margin: 10px 0;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .result > h5 {
+  margin: 10px 0;
+  font-weight: bold;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .result > p {
+  margin: 10px 0;
+  color: #B1191A;
+  font-size: 16px;
+}
+.wrap .detailWrap .detail .fitting .goodSuits .result > button {
+  padding: 10px 25px;
+  background: #e1251b;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+.wrap .detailWrap .detail .tabWrap {
+  *zoom: 1;
+  background: #ededed;
+  border-left: 1px solid #ddd;
+}
+.wrap .detailWrap .detail .tabWrap::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap .detailWrap .detail .tabWrap li {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 11px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+.wrap .detailWrap .detail .tabWrap li + li {
+  border-left: 1px solid #ddd;
+}
+.wrap .detailWrap .detail .tabWrap li.active {
+  background: #ea4a36;
+}
+.wrap .detailWrap .detail .tabWrap li.active a {
+  color: #fff;
+}
+.wrap .detailWrap .detail .tabWrap li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+.wrap .detailWrap .detail .tabContent > div {
+  display: none;
+}
+.wrap .detailWrap .detail .tabContent > div.active {
+  display: block;
+}
+.wrap .detailWrap .detail .tabContent > div ul {
+  padding-left: 10px;
+}
+.wrap .detailWrap .detail .tabContent > div ul li {
+  height: 30px;
+  line-height: 30px;
+}
+.wrap .detailWrap .detail .tabContent > div img {
+  width: 100%;
+}
